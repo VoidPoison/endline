@@ -108,7 +108,6 @@ def click_handler_check():
    else:
       label_3.configure(text=f"Signature is not correct")
 
-
 btn_1 = CTkButton(master=app, text="Hash", corner_radius=32, fg_color="transparent",
                 hover_color="#00BFFF", border_color="#FFCC70", border_width=2, command=click_handler_1)
 btn_1.place(relx=0.2, rely=0.3, anchor="center")
