@@ -43,7 +43,7 @@ def click_handler_2():
    file.write(str(openkey))
    newsign = ''.join(format(x, '02x') for x in signature)
    file = open("signature.txt", "w", encoding="utf-8")
-   file.write(str(openkey))
+   file.write(str(newsign))
 
 
 def click_handler_3():
@@ -63,7 +63,7 @@ def click_handler_3():
                                            gostcrypto.gostsignature.CURVES_R_1323565_1_024_2019[
                                               'id-tc26-gost-3410-2012-256-paramSetB'])
    public_key = bytearray.fromhex('fd21c21ab0dc84c154f3d218e9040bee64fff48bdff814b232295b09d0df72e45026dec9ac4f07061a2a01d7a2307e0659239a82a95862df86041d1458e45049')
-   signature = bytearray.fromhex('fd21c21ab0dc84c154f3d218e9040bee64fff48bdff814b232295b09d0df72e45026dec9ac4f07061a2a01d7a2307e0659239a82a95862df86041d1458e45049')
+   signature = bytearray.fromhex('da4bd8a7b4db57e4911a67106ad18773e10e8835b1a6f3ffd6b4b17131e9a89760d8c43c1d30d7c20cdf9a7e2c641409efc635a2c34076f7b882c83f511f8ba2')
    sign_obj = gostcrypto.gostsignature.new(gostcrypto.gostsignature.MODE_256,
                                            gostcrypto.gostsignature.CURVES_R_1323565_1_024_2019[
                                               'id-tc26-gost-3410-2012-256-paramSetB'])
